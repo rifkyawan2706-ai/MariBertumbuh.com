@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Serene Growth - Konseling Profesional &amp; Empati</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#93000a",
+                    "secondary-container": "#bdf0ae",
+                    "secondary-fixed": "#bdf0ae",
+                    "tertiary-fixed": "#d9e7d0",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#a2d494",
+                    "surface-tint": "#106e00",
+                    "on-primary": "#ffffff",
+                    "on-surface": "#191c19",
+                    "outline": "#6e7b67",
+                    "surface-container-high": "#e7e9e3",
+                    "on-secondary-fixed-variant": "#25501f",
+                    "on-secondary-container": "#436f3a",
+                    "outline-variant": "#becbb4",
+                    "inverse-surface": "#2e312e",
+                    "on-primary-fixed-variant": "#0a5300",
+                    "on-primary-fixed": "#022100",
+                    "surface-container-highest": "#e1e3de",
+                    "on-tertiary": "#ffffff",
+                    "background": "#f8faf5",
+                    "surface-bright": "#f8faf5",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed": "#131e10",
+                    "surface-container-low": "#f3f4ef",
+                    "primary-fixed-dim": "#69e04e",
+                    "on-background": "#191c19",
+                    "primary": "#106e00",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed-variant": "#3e4a39",
+                    "primary-container": "#38b021",
+                    "surface-container": "#edeee9",
+                    "on-error": "#ffffff",
+                    "surface-dim": "#d9dbd5",
+                    "secondary": "#3d6934",
+                    "inverse-on-surface": "#f0f1ec",
+                    "tertiary-container": "#909d89",
+                    "surface": "#f8faf5",
+                    "tertiary-fixed-dim": "#bdcbb5",
+                    "tertiary": "#556250",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-primary": "#69e04e",
+                    "on-surface-variant": "#3e4a39",
+                    "primary-fixed": "#85fd67",
+                    "on-tertiary-container": "#293425",
+                    "on-secondary-fixed": "#002201",
+                    "on-primary-container": "#053b00",
+                    "surface-variant": "#e1e3de"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "stack-sm": "8px",
+                    "stack-md": "16px",
+                    "section-gap": "80px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px",
+                    "stack-lg": "24px",
+                    "container-max": "1200px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "headline-lg-mobile": ["Plus Jakarta Sans"],
+                    "label-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .soft-shadow {
+            box-shadow: 0 20px 40px -15px rgba(25, 28, 25, 0.08);
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 30px 60px -20px rgba(25, 28, 25, 0.12);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="bg-secondary-fixed dark:bg-secondary sticky top-0 z-50 shadow-sm dark:shadow-none w-full">
+<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="font-headline-md text-headline-md font-bold text-on-secondary-fixed-variant dark:text-on-secondary">Serene Growth</span>
+</div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-on-secondary-fixed-variant dark:text-secondary-fixed font-bold border-b-2 border-primary hover:text-primary transition-colors duration-200" href="#">Home</a>
+<a class="font-label-md text-label-md text-on-secondary-fixed-variant/80 dark:text-on-secondary/80 hover:text-primary transition-colors duration-200" href="#">About</a>
+<a class="font-label-md text-label-md text-on-secondary-fixed-variant/80 dark:text-on-secondary/80 hover:text-primary transition-colors duration-200" href="#">Services</a>
+<a class="font-label-md text-label-md text-on-secondary-fixed-variant/80 dark:text-on-secondary/80 hover:text-primary transition-colors duration-200" href="#">Portfolio</a>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-md hover:opacity-90 active:scale-95 transition-all">Book Session</button>
+</div>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative pt-12 pb-section-gap px-margin-mobile md:px-margin-desktop bg-secondary-fixed/30 overflow-hidden">
+<!-- Background Decoration -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<!-- Content Box -->
+<div class="z-10 bg-surface-container-lowest p-8 md:p-12 rounded-[24px] soft-shadow">
+<h1 class="font-display-lg text-[40px] md:text-display-lg leading-tight text-on-surface mb-stack-md">
+                        Mengajakmu <br/>
+<span class="text-primary">untuk Bertumbuh</span> <br/>
+                        Bersama.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">
+                        Membantu Anda menemukan keseimbangan emosional dan ketenangan diri melalui pendekatan konseling profesional dan empati yang mendalam.
+                    </p>
+<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-headline-md text-headline-md flex items-center gap-3 hover:opacity-90 active:scale-95 transition-all shadow-md group">
+                        Jadwalkan Sesi Konsultasi
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<!-- Illustration Box -->
+<div class="relative flex justify-center items-center h-full min-h-[400px]">
+<div class="absolute inset-0 bg-tertiary-fixed/40 rounded-full scale-90 md:scale-100"></div>
+<div class="relative w-full h-full flex justify-center items-center">
+<img class="w-4/5 h-auto object-contain z-10 drop-shadow-xl" data-alt="A serene, minimalist high-end illustration for a counseling service. Two silhouettes of human profiles face each other in soft forest green tones. One silhouette contains an intricate line-art brain representing complexity, and the other shows a simplified, clear mind. The background features a soft mint-green organic blob with clean, professional lighting and a modern, calming aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZtPpGHBWZZC4hEqhSi0kG_y1BZ-UkJt91FRrG8DgecKJSkf7-SJFKzbtUpR03SqKiMSj3W_mMi8NUt7qipUcXZhfeZUAcLNMYvl2PoFDxzmKPMW8FYyu3udqKdpotOi3GmvJT09jkapIEm2_vw1Anfsn379a5j1Er0EqQER3yLqcoWN8zI4u4NZs0XkEl_1u_tdpqIB5lD_dyaQKm6-OQGmk_nH2dWldVFpFHCKdMO00GmwJPX4fhKezFTAIG7k9Pg5YftN2sjhUF"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-container-max mx-auto text-center mb-16">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-4 py-1.5 rounded-full font-label-md text-label-md inline-block mb-4">Layanan Kami</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Pendekatan Personalisasi untuk Pertumbuhan Anda</h2>
+</div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-[24px] soft-shadow card-hover transition-all duration-300 border border-outline-variant/20">
+<div class="w-14 h-14 bg-secondary-fixed flex items-center justify-center rounded-xl mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">psychology</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Konseling Individu</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        Sesi privat untuk mengeksplorasi tantangan pribadi, kecemasan, dan pengembangan diri dalam ruang yang aman.
+                    </p>
+<a class="text-primary font-label-md flex items-center gap-1 hover:gap-2 transition-all" href="#">
+                        Pelajari Selengkapnya <span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-[24px] soft-shadow card-hover transition-all duration-300 border border-outline-variant/20">
+<div class="w-14 h-14 bg-secondary-fixed flex items-center justify-center rounded-xl mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">groups</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Terapi Pasangan</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        Membangun komunikasi yang sehat dan memperkuat koneksi emosional antara Anda dan pasangan tercinta.
+                    </p>
+<a class="text-primary font-label-md flex items-center gap-1 hover:gap-2 transition-all" href="#">
+                        Pelajari Selengkapnya <span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-[24px] soft-shadow card-hover transition-all duration-300 border border-outline-variant/20">
+<div class="w-14 h-14 bg-secondary-fixed flex items-center justify-center rounded-xl mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">mindfulness</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Manajemen Stres</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        Teknik praktis dan mindfulness untuk membantu Anda mengelola tekanan kerja dan kehidupan sehari-hari secara efektif.
+                    </p>
+<a class="text-primary font-label-md flex items-center gap-1 hover:gap-2 transition-all" href="#">
+                        Pelajari Selengkapnya <span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low relative overflow-hidden">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<!-- Image Side -->
+<div class="md:col-span-5 relative group">
+<div class="absolute -inset-4 bg-primary/10 rounded-[32px] blur-2xl group-hover:bg-primary/20 transition-all"></div>
+<div class="relative bg-surface p-3 rounded-[32px] soft-shadow overflow-hidden">
+<img class="w-full h-auto rounded-[24px] aspect-[4/5] object-cover" data-alt="A professional, warm, and approachable portrait of a male counselor in his late 30s. He is wearing a modern casual linen blazer over a white shirt, sitting in a bright, airy office filled with plants and books. The lighting is soft and natural, emphasizing empathy and trustworthiness. High-end photography style with a shallow depth of field, set against the brand's secondary green and neutral white color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_AGPFyjdDVcYVmBpAjEeU3jXlN_2-eXe5LI49z4jtN1-1SCZI-0yRof_Tp1qOY1oMFbKBDdequUXAbia9I_j5fBA2tdKNYqk28JYVe_b49SFm4LN_TE9GPVvr4rBRSRvPo0qYWpUkp-UU5afTchaqQMiX_ZbksCmAXJRiz1w0cQT-fdT4gIpuR02ehWe1-Ep6eWxwy0A3NVLjpL4RRknsH0YPhWB5rc2JgpdZJEXkl8i6hCDqPsbWunxyviVF7-mR2RemGm2MLDmX"/>
+<div class="absolute bottom-10 left-10 right-10 bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-white/40">
+<h4 class="font-headline-md text-headline-md text-on-surface">Rifky Awan, M.Psi.</h4>
+<p class="text-primary font-label-md">Psikolog Klinis Utama</p>
+</div>
+</div>
+</div>
+<!-- Text Side -->
+<div class="md:col-span-7 flex flex-col gap-6 md:pl-8">
+<span class="text-primary font-label-md uppercase tracking-widest">Tentang Saya</span>
+<h2 class="font-headline-lg text-[32px] md:text-[40px] leading-tight text-on-surface">Mendampingi Anda di Setiap Langkah Pemulihan</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Dengan pengalaman lebih dari 10 tahun di bidang psikologi klinis, saya percaya bahwa setiap orang memiliki kapasitas untuk sembuh dan bertumbuh. Pendekatan saya berfokus pada menciptakan ruang tanpa penghakiman di mana Anda merasa didengar dan divalidasi.
+                    </p>
+<div class="grid grid-cols-2 gap-4 my-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">verified</span>
+<div>
+<p class="font-bold text-on-surface">Lisensi Resmi</p>
+<p class="text-sm text-on-surface-variant">Terdaftar di HIMPSI</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">favorite</span>
+<div>
+<p class="font-bold text-on-surface">Pendekatan Empati</p>
+<p class="text-sm text-on-surface-variant">Berpusat pada Klien</p>
+</div>
+</div>
+</div>
+<div>
+<button class="bg-secondary text-on-secondary px-8 py-3 rounded-full font-label-md hover:bg-on-secondary-fixed-variant transition-all">Baca Profil Lengkap</button>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section (Mini) -->
+<section class="py-16 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto bg-primary rounded-[32px] p-12 text-center text-on-primary shadow-2xl relative overflow-hidden">
+<div class="absolute top-0 right-0 p-12 opacity-10">
+<span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<h2 class="font-display-lg text-headline-lg md:text-display-lg mb-6 relative z-10">Siap untuk Memulai Perjalanan Anda?</h2>
+<p class="font-body-lg text-body-lg mb-8 max-w-2xl mx-auto opacity-90 relative z-10">
+                    Ambil langkah pertama menuju kesejahteraan mental hari ini. Konsultasi pertama Anda adalah awal dari versi terbaik diri Anda.
+                </p>
+<div class="flex flex-col md:flex-row gap-4 justify-center relative z-10">
+<button class="bg-white text-primary px-10 py-4 rounded-full font-headline-md hover:bg-secondary-container transition-all">Daftar Sekarang</button>
+<button class="border-2 border-white/30 text-white px-10 py-4 rounded-full font-headline-md hover:bg-white/10 transition-all">Lihat Biaya</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-surface-container-high w-full">
+<div class="w-full px-margin-mobile md:px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto border-t border-outline-variant/30">
+<div class="flex flex-col items-center md:items-start mb-6 md:mb-0">
+<span class="font-headline-md text-headline-md font-bold text-primary mb-2">Serene Growth</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs text-center md:text-left">
+                    Menyediakan ruang aman untuk eksplorasi diri dan pertumbuhan emosional sejak 2014.
+                </p>
+</div>
+<div class="flex flex-col items-center gap-4">
+<div class="flex gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md text-primary font-bold" href="#">Contact</a>
+</div>
+<div class="text-on-surface-variant font-body-md text-body-md opacity-60">
+                    © 2024 Serene Growth Counseling. All rights reserved.
+                </div>
+</div>
+<div class="mt-6 md:mt-0 flex gap-4">
+<button class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all shadow-sm">
+<span class="material-symbols-outlined text-xl">share</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-surface flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all shadow-sm">
+<span class="material-symbols-outlined text-xl">alternate_email</span>
+</button>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions and subtle scroll reveals
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, observerOptions);
+
+            // Adding classes for smooth reveal
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+                observer.observe(section);
+            });
+        });
+    </script>
+</body></html>
